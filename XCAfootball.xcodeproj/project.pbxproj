@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		603E14E42A5420C600682001 /* StandingsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603E14E32A5420C600682001 /* StandingsTableView.swift */; };
+		603E14E72A54229B00682001 /* XCAFootballDataClient in Frameworks */ = {isa = PBXBuildFile; productRef = 603E14E62A54229B00682001 /* XCAFootballDataClient */; };
+		603E14EA2A5423DD00682001 /* StandingsTableObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603E14E92A5423DD00682001 /* StandingsTableObservable.swift */; };
+		603E14EC2A54242A00682001 /* FetchPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603E14EB2A54242A00682001 /* FetchPhase.swift */; };
+		603E14EF2A5427E100682001 /* scorers.json in Resources */ = {isa = PBXBuildFile; fileRef = 603E14EE2A5427E100682001 /* scorers.json */; };
+		603E14F12A54280C00682001 /* standings.json in Resources */ = {isa = PBXBuildFile; fileRef = 603E14F02A54280C00682001 /* standings.json */; };
+		603E14F32A54284E00682001 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603E14F22A54284E00682001 /* Utility.swift */; };
+		603E14F62A5434F800682001 /* SVGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603E14F52A5434F800682001 /* SVGImage.swift */; };
+		603E14FB2A54421400682001 /* StandingsTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603E14FA2A54421400682001 /* StandingsTabItemView.swift */; };
+		603E14FD2A54447900682001 /* TopScorersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603E14FC2A54447900682001 /* TopScorersTableView.swift */; };
+		603E14FF2A54452600682001 /* TopScorersTableObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603E14FE2A54452600682001 /* TopScorersTableObservable.swift */; };
+		603E15012A54504600682001 /* TopScorersTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603E15002A54504600682001 /* TopScorersTabItemView.swift */; };
+		604F9CEA2A5402DB00329DAB /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 604F9CE92A5402DB00329DAB /* RealityKitContent */; };
+		604F9CEC2A5402DB00329DAB /* XCAfootballApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604F9CEB2A5402DB00329DAB /* XCAfootballApp.swift */; };
+		604F9CEE2A5402DB00329DAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604F9CED2A5402DB00329DAB /* ContentView.swift */; };
+		604F9CF02A5402DD00329DAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604F9CEF2A5402DD00329DAB /* Assets.xcassets */; };
+		604F9CF32A5402DD00329DAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604F9CF22A5402DD00329DAB /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		603E14E32A5420C600682001 /* StandingsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableView.swift; sourceTree = "<group>"; };
+		603E14E92A5423DD00682001 /* StandingsTableObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableObservable.swift; sourceTree = "<group>"; };
+		603E14EB2A54242A00682001 /* FetchPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPhase.swift; sourceTree = "<group>"; };
+		603E14EE2A5427E100682001 /* scorers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scorers.json; sourceTree = "<group>"; };
+		603E14F02A54280C00682001 /* standings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = standings.json; sourceTree = "<group>"; };
+		603E14F22A54284E00682001 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		603E14F52A5434F800682001 /* SVGImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGImage.swift; sourceTree = "<group>"; };
+		603E14FA2A54421400682001 /* StandingsTabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTabItemView.swift; sourceTree = "<group>"; };
+		603E14FC2A54447900682001 /* TopScorersTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopScorersTableView.swift; sourceTree = "<group>"; };
+		603E14FE2A54452600682001 /* TopScorersTableObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopScorersTableObservable.swift; sourceTree = "<group>"; };
+		603E15002A54504600682001 /* TopScorersTabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopScorersTabItemView.swift; sourceTree = "<group>"; };
+		604F9CE42A5402DB00329DAB /* XCAfootball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCAfootball.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		604F9CE82A5402DB00329DAB /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		604F9CEB2A5402DB00329DAB /* XCAfootballApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCAfootballApp.swift; sourceTree = "<group>"; };
+		604F9CED2A5402DB00329DAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		604F9CEF2A5402DD00329DAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		604F9CF22A5402DD00329DAB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		604F9CE12A5402DB00329DAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				604F9CEA2A5402DB00329DAB /* RealityKitContent in Frameworks */,
+				603E14E72A54229B00682001 /* XCAFootballDataClient in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		603E14E22A5420A900682001 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				603E14E32A5420C600682001 /* StandingsTableView.swift */,
+				603E14FA2A54421400682001 /* StandingsTabItemView.swift */,
+				603E14FC2A54447900682001 /* TopScorersTableView.swift */,
+				603E15002A54504600682001 /* TopScorersTabItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		603E14E82A54239500682001 /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				603E14E92A5423DD00682001 /* StandingsTableObservable.swift */,
+				603E14FE2A54452600682001 /* TopScorersTableObservable.swift */,
+			);
+			path = Observables;
+			sourceTree = "<group>";
+		};
+		603E14ED2A54276E00682001 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				603E14EE2A5427E100682001 /* scorers.json */,
+				603E14F02A54280C00682001 /* standings.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		604F9CDB2A5402DB00329DAB = {
+			isa = PBXGroup;
+			children = (
+				604F9CE62A5402DB00329DAB /* XCAfootball */,
+				604F9CE72A5402DB00329DAB /* Packages */,
+				604F9CE52A5402DB00329DAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		604F9CE52A5402DB00329DAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				604F9CE42A5402DB00329DAB /* XCAfootball.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		604F9CE62A5402DB00329DAB /* XCAfootball */ = {
+			isa = PBXGroup;
+			children = (
+				603E14ED2A54276E00682001 /* Stubs */,
+				603E14E82A54239500682001 /* Observables */,
+				603E14E22A5420A900682001 /* Views */,
+				604F9CEB2A5402DB00329DAB /* XCAfootballApp.swift */,
+				604F9CED2A5402DB00329DAB /* ContentView.swift */,
+				604F9CEF2A5402DD00329DAB /* Assets.xcassets */,
+				604F9CF12A5402DD00329DAB /* Preview Content */,
+				603E14EB2A54242A00682001 /* FetchPhase.swift */,
+				603E14F22A54284E00682001 /* Utility.swift */,
+				603E14F52A5434F800682001 /* SVGImage.swift */,
+			);
+			path = XCAfootball;
+			sourceTree = "<group>";
+		};
+		604F9CE72A5402DB00329DAB /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				604F9CE82A5402DB00329DAB /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		604F9CF12A5402DD00329DAB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				604F9CF22A5402DD00329DAB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		604F9CE32A5402DB00329DAB /* XCAfootball */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 604F9CF62A5402DD00329DAB /* Build configuration list for PBXNativeTarget "XCAfootball" */;
+			buildPhases = (
+				604F9CE02A5402DB00329DAB /* Sources */,
+				604F9CE12A5402DB00329DAB /* Frameworks */,
+				604F9CE22A5402DB00329DAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCAfootball;
+			packageProductDependencies = (
+				604F9CE92A5402DB00329DAB /* RealityKitContent */,
+				603E14E62A54229B00682001 /* XCAFootballDataClient */,
+			);
+			productName = XCAfootball;
+			productReference = 604F9CE42A5402DB00329DAB /* XCAfootball.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		604F9CDC2A5402DB00329DAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					604F9CE32A5402DB00329DAB = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 604F9CDF2A5402DB00329DAB /* Build configuration list for PBXProject "XCAfootball" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 604F9CDB2A5402DB00329DAB;
+			packageReferences = (
+				603E14E52A54229B00682001 /* XCRemoteSwiftPackageReference "XCAFootballDataClient" */,
+			);
+			productRefGroup = 604F9CE52A5402DB00329DAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				604F9CE32A5402DB00329DAB /* XCAfootball */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		604F9CE22A5402DB00329DAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				603E14EF2A5427E100682001 /* scorers.json in Resources */,
+				603E14F12A54280C00682001 /* standings.json in Resources */,
+				604F9CF32A5402DD00329DAB /* Preview Assets.xcassets in Resources */,
+				604F9CF02A5402DD00329DAB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		604F9CE02A5402DB00329DAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				603E14EC2A54242A00682001 /* FetchPhase.swift in Sources */,
+				603E15012A54504600682001 /* TopScorersTabItemView.swift in Sources */,
+				603E14FB2A54421400682001 /* StandingsTabItemView.swift in Sources */,
+				603E14FD2A54447900682001 /* TopScorersTableView.swift in Sources */,
+				603E14E42A5420C600682001 /* StandingsTableView.swift in Sources */,
+				603E14F32A54284E00682001 /* Utility.swift in Sources */,
+				603E14FF2A54452600682001 /* TopScorersTableObservable.swift in Sources */,
+				603E14F62A5434F800682001 /* SVGImage.swift in Sources */,
+				603E14EA2A5423DD00682001 /* StandingsTableObservable.swift in Sources */,
+				604F9CEE2A5402DB00329DAB /* ContentView.swift in Sources */,
+				604F9CEC2A5402DB00329DAB /* XCAfootballApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		604F9CF42A5402DD00329DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		604F9CF52A5402DD00329DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+		604F9CF72A5402DD00329DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"XCAfootball/Preview Content\"";
+				DEVELOPMENT_TEAM = A2UPP8QZG7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emsal.XCAfootball;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		604F9CF82A5402DD00329DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"XCAfootball/Preview Content\"";
+				DEVELOPMENT_TEAM = A2UPP8QZG7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emsal.XCAfootball;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		604F9CDF2A5402DB00329DAB /* Build configuration list for PBXProject "XCAfootball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				604F9CF42A5402DD00329DAB /* Debug */,
+				604F9CF52A5402DD00329DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		604F9CF62A5402DD00329DAB /* Build configuration list for PBXNativeTarget "XCAfootball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				604F9CF72A5402DD00329DAB /* Debug */,
+				604F9CF82A5402DD00329DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		603E14E52A54229B00682001 /* XCRemoteSwiftPackageReference "XCAFootballDataClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/XCAFootballDataClient";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		603E14E62A54229B00682001 /* XCAFootballDataClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 603E14E52A54229B00682001 /* XCRemoteSwiftPackageReference "XCAFootballDataClient" */;
+			productName = XCAFootballDataClient;
+		};
+		604F9CE92A5402DB00329DAB /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 604F9CDC2A5402DB00329DAB /* Project object */;
+}
